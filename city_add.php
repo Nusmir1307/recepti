@@ -1,10 +1,6 @@
-<html>
-<head>
-    <title>Recepti</title>
-</head>
-
-
-<body>
+<?php
+include_once "header.php";
+?>
 <H1>Dodaj kraj</H1>
 <form action="city_insert.php" method="post">
     Vnesi kraj: <input type="text" name="title" /><br />
@@ -12,5 +8,6 @@
  <input type="submit" value="Shrani" />
 </form>
 
-</body>
-</html>
+<?php
+include_once "footer.php";
+?>

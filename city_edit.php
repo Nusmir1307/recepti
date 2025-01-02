@@ -10,11 +10,9 @@ $stmt->execute([$id]);
 $row = $stmt->fetch();
 
 ?>
-<html>
-<head>
-    <title>Recepti</title>
-</head>
-<body>
+<?php
+include_once "header.php";
+?>
 <H1>Uredi kraj</H1>
 <form action="city_update.php" method="post">
     <input type="hidden" name="id" value="<?php echo $row['id'];?>" />
@@ -22,6 +20,7 @@ $row = $stmt->fetch();
     Vnesi poštno številko: <input type="text" name="post_number" value="<?php echo $row['post_number'];?>" /><br />
     <input type="submit" value="Shrani" />
 </form>
-</body>
-</html>
+<?php
+include_once "footer.php";
+?>
 
